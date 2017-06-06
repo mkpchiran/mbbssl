@@ -55,9 +55,8 @@ freeline/
 freeline_project_description.json
 /.idea/
 /build/
-/app/
+
 /app/build/
-build.gradle
 fabric.properties
 libs/
 proguard-rules.pro

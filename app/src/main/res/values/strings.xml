@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MBBS SL</string>
+    <string name="action_settings">About</string>
+    <string-array name="registry_type">
+        <item>SEC29</item>
+        <item>ACT15</item>
+        <item>Dental</item>
+        <item>SEC41</item>
+    </string-array>
+    <string name="title_activity_result">MBBS Result</string>
+    <string name="main_activity_result">MBBS Sri Lanka</string>
+    <string name="title_activity_person">Doctor</string>
+    <string name="address">Address</string>
+    <string name="fullname">Fullname</string>
+    <string name="qualification">Qualification</string>
+    <string name="regno">RegNo</string>
+    <string name="regdate">regDate</string>
+    <string name="family_name">Family Name</string>
+    <string name="category">Category</string>
+    <string name="find">Find</string>
+    <string name="initials">Initials</string>
+    <string name="nic_no">NIC No</string>
+    <string name="other_name">Other Name</string>
+    <string name="part_of_the_n_address">Part of the Address</string>
+    <string name="register_no">Register No</string>
+    <string name="next">next</string>
+    <string name="prev">prev</string>
+
+</resources>
