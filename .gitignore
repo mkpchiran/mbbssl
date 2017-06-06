@@ -15,7 +15,7 @@ out/
 
 # Gradle files
 .gradle/
-build/
+build/git status
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -53,3 +53,18 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+/.idea/
+/build/
+/app/
+/app/build/
+.gitignore
+build.gradle
+fabric.properties
+libs/
+proguard-rules.pro
+src/
+/app/app.iml
+/gradlew
+/gradlew.bat
+/Aitem.iml
+gradle/
