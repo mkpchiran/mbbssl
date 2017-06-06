@@ -62,7 +62,7 @@ build.gradle
 fabric.properties
 libs/
 proguard-rules.pro
-src/
+
 /app/app.iml
 /gradlew
 /gradlew.bat
