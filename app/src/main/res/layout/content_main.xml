@@ -48,10 +48,10 @@
                             android:layout_weight="1"
                             android:text="@string/initials"
                             android:textAlignment="viewStart" 
-                            android:textColor="@color/colorBlue"
+                            android:textColor="@color/colorBlack"
 
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -75,9 +75,9 @@
                             android:layout_weight="1"
                             android:text="@string/family_name"
                             android:textAlignment="viewStart" 
-                            android:textColor="@color/colorBlue"
+                            android:textColor="@color/colorBlack"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -102,9 +102,9 @@
                             android:layout_weight="1"
                             android:text="@string/other_name"
                             android:textAlignment="viewStart" 
-                            android:textColor="@color/colorBlue"
+                            android:textColor="@color/colorBlack"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -129,9 +129,9 @@
                             android:layout_weight="1"
                             android:text="@string/register_no"
                             android:textAlignment="viewStart" 
-                            android:textColor="@color/colorBlue"
+                            android:textColor="@color/colorBlack"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -155,9 +155,9 @@
                             android:layout_weight="1"
                             android:text="@string/nic_no"
                             android:textAlignment="viewStart" 
-                            android:textColor="@color/colorBlue"
+                            android:textColor="@color/colorBlack"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -181,9 +181,9 @@
                             android:layout_weight="1"
                             android:text="@string/part_of_the_n_address"
                             android:textAlignment="viewStart"
-                            android:textColor="@color/colorBlue"
+                            android:textColor="@color/colorBlack"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -208,9 +208,9 @@
                             android:layout_weight="1"
                             android:text="@string/category"
                             android:textAlignment="viewStart" 
-                            android:textColor="@color/colorBlue"
+                            android:textColor="@color/colorBlack"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="normal" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -393,7 +393,7 @@
                 <Button
                     android:id="@+id/search_button"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="150px"
                     android:layout_marginBottom="@dimen/fab_margin"
                     android:layout_marginEnd="@dimen/fab_margin"
                     android:layout_marginStart="@dimen/fab_margin"

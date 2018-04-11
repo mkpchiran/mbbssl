@@ -20,6 +20,8 @@ import process.Dataset;
 import process.Model;
 import process.Process;
 
+import static com.org.chiranz.aitem.R.color.colorBlack;
+
 public class ResultActivity extends AppCompatActivity {
     ArrayList<Model> data = new ArrayList<>();
     TableLayout table = null;
@@ -69,14 +71,14 @@ public class ResultActivity extends AppCompatActivity {
             table.addView(row);
         } else
             for (int i = 0; i < models.size(); i++) {
-                int color = i % 2;
-                if (color == 0) {
-                    color = R.color.colorBlue;
-                } else if (color == 1) {
-                    color = R.color.DarkcolorBlue;
-                } /*else if (color == 2) {
-                    color = R.color.colorRed;
-                }*/
+                int color = R.color.colorWhite;//i % 2;
+//                if (color == 0) {
+//                    color = R.color.colorBlue;
+//                } else if (color == 1) {
+//                    color = R.color.DarkcolorBlue;
+//                } /*else if (color == 2) {
+//                    color = R.color.colorRed;
+//                }*/
 
                 final Model model = models.get(i);
                 String reg_No = models.get(i).getReg_No(),
@@ -102,6 +104,12 @@ public class ResultActivity extends AppCompatActivity {
                 row2.setBackgroundResource(color);
                 row3.setBackgroundResource(color);
                 row4.setBackgroundResource(color);
+
+                tvRegNo.setTextColor(colorBlack);
+                tvRegDate.setTextColor(colorBlack);
+                tvFullName.setTextColor(colorBlack);
+                tvAddress.setTextColor(colorBlack);
+                tvQualifications.setTextColor(colorBlack);
 
                 tvAddress.setSingleLine(false);
                 tvAddress.setMaxLines(5);
@@ -138,7 +146,7 @@ public class ResultActivity extends AppCompatActivity {
                 row3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        v.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light));
+                        v.setBackgroundColor(getResources().getColor(android.R.color.white));
                         Dataset.setModel(model);
                         startActivity(intent);
                     }
@@ -147,7 +155,7 @@ public class ResultActivity extends AppCompatActivity {
                 row1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        v.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light));
+                        v.setBackgroundColor(getResources().getColor(android.R.color.white));
                         Dataset.setModel(model);
                         startActivity(intent);
                     }
