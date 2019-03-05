@@ -61,8 +61,8 @@ public class Process {
                             String reg_no,
                             String nic,
                             String part_of_address) {
-        if (registry.equals("SEC29")) {
-            registry = "5";
+        if (registry.contains("SEC29")) {
+            registry = "5";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         } else if (registry.equals("ACT15")) {
             registry = "3";
         } else if (reg_no.equals("Dental")) {

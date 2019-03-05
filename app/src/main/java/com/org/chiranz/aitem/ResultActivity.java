@@ -71,23 +71,23 @@ public class ResultActivity extends AppCompatActivity {
             table.addView(row);
         } else
             for (int i = 0; i < models.size(); i++) {
-                int color = R.color.colorWhite;//i % 2;
-//                if (color == 0) {
-//                    color = R.color.colorBlue;
-//                } else if (color == 1) {
-//                    color = R.color.DarkcolorBlue;
-//                } /*else if (color == 2) {
+                int color = i % 2;
+                    if (color == 0) {
+                        color = R.color.colorGreen;
+                    } else if (color == 1) {
+                        color = R.color.colorBlue;
+                    } /*else if (color == 2) {
 //                    color = R.color.colorRed;
-//                }*/
+//                  }*/
 
                 final Model model = models.get(i);
                 String reg_No = models.get(i).getReg_No(),
-                        reg_Date = models.get(i).getReg_Date(),
-                        full_Name = models.get(i).getFull_Name(),
-                        address = models.get(i).getAddress(),
-                        qualifications = models.get(i).getQualifications();
+                       reg_Date = models.get(i).getReg_Date(),
+                       full_Name = models.get(i).getFull_Name(),
+                       address = models.get(i).getAddress(),
+                       qualifications = models.get(i).getQualifications();
 
-                TableRow row = new TableRow(this);
+                TableRow row0 = new TableRow(this);
                 TableRow row1 = new TableRow(this);
                 TableRow row2 = new TableRow(this);
                 TableRow row3 = new TableRow(this);
@@ -99,7 +99,7 @@ public class ResultActivity extends AppCompatActivity {
                 TextView tvAddress = new TextView(this);
                 TextView tvQualifications = new TextView(this);
 
-                row.setBackgroundResource(color);
+                row0.setBackgroundResource(color);
                 row1.setBackgroundResource(color);
                 row2.setBackgroundResource(color);
                 row3.setBackgroundResource(color);
@@ -128,11 +128,14 @@ public class ResultActivity extends AppCompatActivity {
                 tvAddress.setText("Address           : " + address);
                 tvQualifications.setText("Qualifications : " + qualifications);
 
-                row.addView(tvRegNo);
+                row0.addView(tvRegNo);
                 row1.addView(tvFullName);
                 row2.addView(tvRegDate);
                 row3.addView(tvAddress);
                 row4.addView(tvQualifications);
+
+                row1.setBackgroundColor(color);
+                row3.setBackgroundColor(color);
 
 //                table.addView(row);
                 table.addView(row1);
@@ -146,7 +149,7 @@ public class ResultActivity extends AppCompatActivity {
                 row3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        v.setBackgroundColor(getResources().getColor(android.R.color.white));
+                        v.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
                         Dataset.setModel(model);
                         startActivity(intent);
                     }
@@ -155,7 +158,7 @@ public class ResultActivity extends AppCompatActivity {
                 row1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        v.setBackgroundColor(getResources().getColor(android.R.color.white));
+                        v.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_dark));
                         Dataset.setModel(model);
                         startActivity(intent);
                     }

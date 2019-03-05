@@ -15,11 +15,11 @@ import android.widget.Spinner;
 
 import com.crashlytics.android.Crashlytics;
 
+import com.crashlytics.android.ndk.CrashlyticsNdk;
 import org.jsoup.nodes.Document;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
+        Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
         setContentView(R.layout.activity_main);
 
     }
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                     Dataset.setModels(offlinedata);
                     Dataset.setIsNextOk(false);
                 } catch (Exception ex) {
-
+                    ex.printStackTrace();
 
                 }
 //                e.printStackTrace();

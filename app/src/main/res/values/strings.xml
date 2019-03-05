@@ -2,7 +2,7 @@
     <string name="app_name">MBBS SL</string>
     <string name="action_settings">About</string>
     <string-array name="registry_type">
-        <item>SEC29</item>
+        <item>Doctor/SEC29</item>
         <item>ACT15</item>
         <item>Dental</item>
         <item>SEC41</item>
@@ -14,7 +14,7 @@
     <string name="fullname">Fullname</string>
     <string name="qualification">Qualification</string>
     <string name="regno">RegNo</string>
-    <string name="regdate">regDate</string>
+    <string name="regdate">RegDate</string>
     <string name="family_name">Family Name</string>
     <string name="category">Category</string>
     <string name="find">Find</string>
@@ -25,5 +25,6 @@
     <string name="register_no">Register No</string>
     <string name="next">next</string>
     <string name="prev">prev</string>
+    <string name="title">Welcome To MBBS SL</string>
 
 </resources>

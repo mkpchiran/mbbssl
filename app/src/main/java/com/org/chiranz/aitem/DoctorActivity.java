@@ -23,13 +23,17 @@ public class DoctorActivity extends AppCompatActivity {
         TextView personQualification = (TextView)findViewById(R.id.personQualification);
         TextView personRegDate = (TextView)findViewById(R.id.personRegDate);
 
-        personFullName.setText("Full Name : \n"+model.getFull_Name());
-        personAddress.setText("Address : \n"+model.getAddress());
-        personaRegNo.setText("Registration No : \n"+model.getReg_No());
-        personRegDate.setText("Registration Date: \n"+model.getReg_Date());
-        personQualification.setText("Qualifications : \n"+model.getQualifications());
+        personFullName.setText(" Full Name : \n " + model.getFull_Name());
+        personAddress.setText(" Address : \n " + model.getAddress());
+        personaRegNo.setText(" Registration No : \n " + model.getReg_No());
+        personRegDate.setText(" Registration Date: \n " + model.getReg_Date());
+        personQualification.setText(" Qualifications : \n " + model.getQualifications());
 
-
+        personFullName.setBackgroundColor(R.color.colorBlue);
+        personAddress.setBackgroundColor(R.color.colorBlue);
+        personaRegNo.setBackgroundColor(R.color.colorBlue);
+        personRegDate.setBackgroundColor(R.color.colorBlue);
+        personQualification.setBackgroundColor(R.color.colorBlue);
 
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override

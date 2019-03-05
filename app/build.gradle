@@ -17,10 +17,10 @@ repositories {
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "26.0.2"
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.org.chiranz.aitem"
-        minSdkVersion 18
+        minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -53,4 +53,13 @@ dependencies {
     compile 'org.jsoup:jsoup:1.8.3'
     testCompile 'junit:junit:4.12'
     compile 'com.google.android.gms:play-services-maps:10.2.6'
+    compile('com.crashlytics.sdk.android:crashlytics-ndk:2.0.5@aar') {
+        transitive = true;
+    }
+}
+
+crashlytics {
+    enableNdk true
+    androidNdkOut 'src/main/obj'
+    androidNdkLibsOut 'src/main/libs'
 }
